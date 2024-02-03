@@ -70,7 +70,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const username = document.getElementById(\"username\");\r\nconst Password = document.getElementById(\"password\");\r\nconst form = document.getElementById(\"form\")\r\nconst { SingInUser } = __webpack_require__(/*! ./util */ \"./src/util.js\");\r\n\r\n\r\nform.addEventListener(\"submit\", async function(event) {\r\n    event.preventDefault();\r\n    const login = await SingInUser(username.value, Password.value);\r\n    if (login != \"Correo o contraseña incorrecto.\") {\r\n        localStorage.setItem(\"userLoggueado\", login);\r\n        window.location.href = \"./html/index.html\"\r\n        \r\n      } else {\r\n        alert(login);\r\n      }\r\n})\r\n\r\n\n\n//# sourceURL=webpack://reservas/./src/login.js?");
+eval("const username = document.getElementById(\"username\");\r\nconst Password = document.getElementById(\"password\");\r\nconst form = document.getElementById(\"form\")\r\nconst { SingInUser } = __webpack_require__(/*! ./util */ \"./src/util.js\");\r\n\r\n\r\nform.addEventListener(\"submit\", async function(event) {\r\n    event.preventDefault();\r\n    const login = await SingInUser(username.value, Password.value);\r\n    if (login != \"Correo o contraseña incorrecto.\") {\r\n        localStorage.setItem(\"userLoggueado\", login);\r\n        window.location.href = \"./html/index.html\"\r\n        \r\n      } else {\r\n        alert(login); \r\n      }\r\n})\r\n\r\n\n\n//# sourceURL=webpack://reservas/./src/login.js?");
 
 /***/ }),
 
