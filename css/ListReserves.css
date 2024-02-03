@@ -1,0 +1,39 @@
+/* CSS styles for the reservation table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* CSS styles for the "Create a New Tour" button */
+button {
+  padding: 5px 10px;
+  background-color: #00829f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #029abc;
+}
+
+/* CSS styles for centering the button in each row */
+td:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pro Sidebar template</title>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css'>
+  <link rel='stylesheet' href='https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap'>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css"/>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../CcssS/form.css">
+  <link rel="stylesheet" href="../css/ListReserves.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="layout has-sidebar fixed-sidebar fixed-header">
+  <aside id="sidebar" class="sidebar break-point-sm has-bg-image">
+    <a id="btn-collapse" class="sidebar-collapser"><i class="ri-arrow-left-s-line"></i></a>
+    <div class="image-wrapper">
+      <img src="assets/images/sidebar-bg.jpg" alt="sidebar background" />
+    </div>
+    <div class="sidebar-layout">
+      <div class="sidebar-header">
+        <div class="pro-sidebar-logo">
+          <h5>Alsama Tours</h5>
+        </div>
+      </div>
+      <div class="sidebar-content">
+        <nav class="menu open-current-submenu">
+          <ul>
+            <li class="menu-header"><span> GENERAL </span></li>
+            <li class="menu-item sub-menu">
+              <a href="#">
+                <span class="menu-icon">
+                  <i class="ri-vip-diamond-fill"></i>
+                </span>
+                <span class="menu-title">Costumer</span>
+                <span class="menu-suffix">
+                  <span class="badge primary">Active</span>
+                </span>
+              </a>
+              <div class="sub-menu-list">
+                <ul>
+                  <li class="menu-item">
+                    <a href="index.html">
+                      <span class="menu-title">Create a Costumer</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="UpdateCostumer.html">
+                      <span class="menu-title">Update Costumer</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="DeleteCostumer.html">
+                      <span class="menu-title">Delete Costumer</span>
+                    </a>
+                   
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item sub-menu">
+              <a href="#">
+                <span class="menu-icon">
+                  <i class="ri-bar-chart-2-fill"></i>
+                </span>
+                <span class="menu-title">Excel</span>
+              </a>
+              <div class="sub-menu-list">
+                <ul>
+                  <li class="menu-item">
+                    <a href="ReportCX.html">
+                      <span class="menu-title">Report costumers</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ReportTours.html">
+                      <span class="menu-title">Report tours</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="ReportComplete">
+                      <span class="menu-title">Complete report</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item sub-menu">
+              <a href="#">
+                <span class="menu-icon">
+                  <i class="ri-shopping-cart-fill"></i>
+                </span>
+                <span class="menu-title">Tours</span>
+              </a>
+              <div class="sub-menu-list">
+                <ul>
+                  <li class="menu-item">
+                    <a href="AddTourCx.html">
+                      <span class="menu-title">Add tours for a  Costumer</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="AddTourCx.html">
+                      <span class="menu-title">Modify Tour</span>
+                      <span class="menu-suffix">
+                        <span class="badge primary">Admin</span>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-item sub-menu">
+              <a href="#">
+                <span class="menu-icon">
+                  <i class="ri-global-fill"></i>
+                </span>
+                <span class="menu-title">Billing</span>
+              </a>
+              <div class="sub-menu-list">
+                <ul>
+                  <li class="menu-item">
+                    <a href="BillingCostumer.html">
+                      <span class="menu-title">Costumer</span>
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="BillingSuplier.html">
+                      <span class="menu-title">supplier</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu-header" style="padding-top: 20px"><span> EXTRA </span></li>
+            <li class="menu-item">
+              <a target="_blank" href="https://console.firebase.google.com/u/0/project/alsamatours-404fb/authentication/users?hl=es-419">
+                <span class="menu-icon">
+                  <i class="ri-book-2-fill"></i>
+                </span>
+                <span class="menu-title">Add users</span>
+                <span class="menu-suffix">
+                  <span class="badge secondary">Admin</span>
+                </span>
+              </a>
+            </li>
+            <li class="menu-item" >
+              <a href="#" class="nav__logout" >
+               
+                <span class="menu-title">Log out</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </aside>
+  <!-- partial:index.partial.html -->
+  <div id="overlay" class="overlay"></div>
+
+
+
+
+
+      <div class="layout">
+        <main class="content">
+          <div>
+            <a id="btn-toggle" href="#" class="sidebar-toggler break-point-sm">
+              <i class="ri-menu-line ri-xl"></i>
+            </a>
+            <h1 style="margin-bottom: 0">Add tour</h1>
+            
+            <span style="display: inline-block">
+             
+            </span>
+            <br />
+
+
+
+            <div id="Reserva"> <!-- To add tours -->
+              <h1>Reservation List</h1>
+  
+              <table id="myTable">
+                <thead>
+                  <tr>
+                    <th>Tour Name</th>
+                    <th>Cliente</th>
+                    <th>Pax</th>
+                    <th>Pick Up</th>
+                    <th>Drop off</th>
+                    <th>Date</th>
+                    <th>Select</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>VIP City Tour</td>
+                    <td>John Doe</td>
+                    <td>3</td>
+                    <td>Hiex</td>
+                    <td>Hiex</td>
+                    <td>2023-05-22</td>
+                    <td><button onclick="createNewTour()">Select</button></td>
+                  </tr>
+                  <tr>
+                    <td>Manuel Antonio</td>
+                    <td>Jane Smith</td>
+                    <td>3</td>
+                    <td>Hampton</td>
+                    <td>Hampton</td>
+                    <td>2023-07-23</td>
+                    <td><button onclick="createNewTour()">Select</button></td>
+                  </tr>
+                  <tr>
+                    <td>Cataratas</td>
+                    <td>John Doe</td>
+                    <td>3</td>
+                    <td>Hiex</td>
+                    <td>Hiex</td>
+                    <td>2023-05-22</td>
+                    <td><button onclick="createNewTour()">Select</button></td>
+                  </tr>
+                  <tr>
+                    <td>ATV & Chocotour</td>
+                    <td>Marco</td>
+                    <td>3</td>
+                    <td>Hampton</td>
+                    <td>Hampton</td>
+                    <td>2023-07-23</td>
+                    <td><button onclick="createNewTour()">Select</button></td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+        </main>
+        <div class="overlay"></div>
+      </div>
+    </div>
+<!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+  <script src='https://unpkg.com/@popperjs/core@2'></script>
+  <script  src="../dist/script.bundle.js"></script>
+  <script  src="../dist/validation.bundle.js"></script>
+  <script  src="../dist/deleteAUser.bundle.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#myTable').DataTable({
+        "order": [[ 1, "desc" ]],
+        "columnDefs": [
+          { "orderable": false, "targets": 6 }
+        ]
+      });
+    });
+  </script>
+
+</body>
+</html>
